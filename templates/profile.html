@@ -1,0 +1,16 @@
+{% extends "index.html"%}
+{% block content %}
+<h1>
+    Student Details
+</h1>
+<ul>
+    <li>{{student.name}}</li>
+    <li>{{student.id}}</li>
+    <li>{{student.grade}}</li>
+</ul>
+<button>
+    <a href="/">
+        Back
+    </a>
+</button>
+{% endblock %}

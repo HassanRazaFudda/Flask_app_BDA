@@ -1,0 +1,16 @@
+{% extends "index.html"%}
+{% block content %}
+<h1>Student Management</h1>
+    <form action="{{url_for('create')}}" method="post">
+        <lable for="name">Student Name</lable>
+        <input type= "text" name="name" placeholder="Home">
+        <br>
+        <lable for="id">Student ID</lable>
+        <input type= "text" name="id" placeholder="ID">
+        <br>
+        <lable for="grade">Grade</lable>       <!-- fixed name="grade" -->
+        <input type= "text" name="grade" placeholder="ID">
+        <!-- <input type ="submit"> -->
+        <button type ="submit">Save</button>
+    </form>
+{% endblock %}
